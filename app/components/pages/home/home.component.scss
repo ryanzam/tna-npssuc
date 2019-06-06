@@ -1,0 +1,30 @@
+#member {
+  background: #3b4652;
+}
+
+#member-title{
+  color: white;
+}
+
+#banner {
+  background-image: url("https://picsum.photos/id/310/800/300");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+
+}
+#banner .banner-name {
+  padding-top: 100px; 
+}
+#banner h1, p, a{
+  color: whitesmoke;
+}
+
+#follow-us .fab{
+font-size: 50px;
+color: #15445b;
+padding-right: 10px;
+margin-bottom: 50px;
+
+}

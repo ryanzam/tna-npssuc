@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    	<img src="https://firebasestorage.googleapis.com/v0/b/turkunepal-21097.appspot.com/o/tna%2Fassets%2Ffavicon.png?alt=media&token=ed77fd8c-aff9-483f-8650-3eac97d9901a">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto text-primary">
+      <li class="nav-item active" *ngFor="let tab of state.tabs; let i=index">
+        <a class="nav-link text-uppercase" (click)="setActiveTab(i)" *ngIf="(tab==='account' && user) || tab !== 'account'" [routerLink]="tab" routerLinkActive
+						 [class.tna-tab-active]="tab===state.activetab">
+         {{ tab }}</a>
+           <span class="sr-only">(current)</span>
+      </li>
+    </ul>
+    <ul class="float-right my-2 my-lg-0">
+      <label class="tna-read-more" routerLink="profile" (click)="state.activetab=''" mdTooltipPosition="right" mdTooltip="Click to view full profile">{{ user?.email }}</label>
+					<button class="btn btn-danger" (click)="user? logout() : openLoginDialog()">{{ user ? 'LOGOUT' : 'LOGIN' }}</button>
+					<div class="btn btn-danger" *ngIf="!user" (click)="openSignUpDialog()">Register</div>
+    </ul>
+  </div>
+</nav>
+
+			<router-outlet></router-outlet>
