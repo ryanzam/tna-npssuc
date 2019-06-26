@@ -1,5 +1,5 @@
 <div class="tna-event">
-	<div class="tna-event-header" fxLayout="row" fxLayoutAlign="space-between end">
+	<div class="tna-event-header" >
 		<h4>{{ data?.title }}</h4>
 		<h5 *ngIf="data?.type!=='recursive'">{{ data?.datetime | date: 'd MMM y'}}</h5>
 		<h5 *ngIf="data?.type==='recursive'">{{ data?.datetime }}</h5>

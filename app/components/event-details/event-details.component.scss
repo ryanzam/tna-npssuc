@@ -1,13 +1,11 @@
 @import "../../../variables/variables";
 .tna-event-details-container{
-    margin: 1rem 0;
-    height: 100%;
-    width: 100%;
+    
 }
 .tna-event-title-description{
     border-bottom: .1rem dashed $card-background;
     margin-bottom: .8rem;
-    background-color: rgb(5, 31, 53);
+    background-color: #3a0758;
     color: white;
     padding: 15px;
 
@@ -15,12 +13,6 @@
 }
 .tna-event-time-location{
   
-    font-size: 1.3rem;
-    md-icon {
-        font-size: 1.4rem;
-        height: 1.4rem;
-        width: 1.4rem;
-    };
 }
 .tna-event-prices{
     .price {
@@ -33,28 +25,15 @@
     };
 }
 .tna-event-name {
-    font-size: 1.4rem;
-    font-weight: bold;
+
 }
 
 .tna-description {
-    font-size: 1.3rem;
-    padding: 15px;
-    max-height: unset !important;
-    &::-webkit-scrollbar {
-        display: none;
-    }
-    pre{
-        margin: 0;
-    }
+
 }
 .tna-event-action-buttons{
-    margin-bottom: .4rem;
-    button{
-        height: 3.0rem;
-    }
+
 }
 .tna-warning{
-    font-size: 14px;
-    color: $color-warn;
+
 }
